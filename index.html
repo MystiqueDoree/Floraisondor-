@@ -1,145 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Le Mystère de la Floraison d'Or</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0d0d0d, #1a0a2a);
+      color: gold;
       font-family: 'Georgia', serif;
-      background: black url('https://upload.wikimedia.org/wikipedia/commons/f/f6/Phoenix_rising_from_the_ashes.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff8dc;
-      text-shadow: 1px 1px 3px #000;
-    }
-    header {
       text-align: center;
-      padding: 3rem 1rem;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
     }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    h1 {
+      font-size: 3em;
+      margin-top: 60px;
+      text-shadow: 0 0 20px gold;
     }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+      color: #f5d76e;
     }
-    nav a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
+    p {
+      font-size: 1.2em;
+      margin: 20px auto;
+      width: 80%;
+      line-height: 1.6em;
     }
-    section {
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      margin: 1rem auto;
-      width: 90%;
-      max-width: 800px;
-      border-radius: 10px;
+    img {
+      width: 220px;
+      margin-top: 30px;
+      animation: voler 5s infinite ease-in-out;
     }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      font-size: 0.9rem;
+    @keyframes voler {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
     }
-    button {
-      background: #ffd700;
-      color: black;
+    .button {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 1em;
+      color: white;
+      background: linear-gradient(to right, #e1b12c, #fbc531);
       border: none;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
+      border-radius: 30px;
       cursor: pointer;
-      border-radius: 5px;
-      margin: 0.5rem;
+      box-shadow: 0 0 15px gold;
+      transition: 0.3s;
     }
-    audio {
-      display: none;
+    .button:hover {
+      background: linear-gradient(to right, #fbc531, #e1b12c);
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="https://www.mfiles.co.uk/mp3-downloads/mozart-eine-kleine-nachtmusik-1st-movement.mp3" type="audio/mpeg" />
-  </audio>
-
-  <header>
-    <h1>Le Mystère de la Floraison d'Or</h1>
-    <p>Un sanctuaire de lumière, de gnose et de renaissance</p>
-  </header>
-
-  <nav>
-    <a href="#gnose">La Gnose</a>
-    <a href="#samael">Maître Samaël</a>
-    <a href="#maitres">Les Maîtres</a>
-    <a href="#egypte">Égypte Antique</a>
-    <a href="#bibliotheque">Bibliothèque Sacrée</a>
-    <a href="#galerie">Images</a>
-    <a href="#musique">Musiques</a>
-    <a href="#oracle">Oracle</a>
-    <a href="#inscription">Inscription</a>
-    <a href="#don">Faire un Don</a>
-  </nav>
-
-  <section id="gnose">
-    <h2>La Gnose</h2>
-    <p>Une sagesse intemporelle, une voie de connaissance intérieure, un chemin initiatique de lumière et de vérité.</p>
-  </section>
-
-  <section id="samael">
-    <h2>Maître Samaël Aun Weor</h2>
-    <p>Maître de la Loge Blanche, révélateur contemporain de la Gnose. Son œuvre est une porte d’éveil multidimensionnelle.</p>
-  </section>
-
-  <section id="maitres">
-    <h2>Les Grands Maîtres</h2>
-    <p>De Jésus à Thot, de Bouddha à Hermès, la Loge Blanche nous guide dans l’ombre des étoiles. Honore leur sagesse.</p>
-  </section>
-
-  <section id="egypte">
-    <h2>Égypte Antique</h2>
-    <p>Terre de mystères, d’initiation et de puissance magique. Nous marchons dans les pas d’Isis, Osiris et Horus.</p>
-  </section>
-
-  <section id="bibliotheque">
-    <h2>Bibliothèque Sacrée</h2>
-    <p>Grimoires, manuscrits, traités anciens. Un savoir préservé à lire en silence, dans la vibration du cœur.</p>
-  </section>
-
-  <section id="galerie">
-    <h2>Galerie d'Images</h2>
-    <p>Symboles sacrés, talismans vibratoires, totems élémentaires : l’art devient prière.</p>
-  </section>
-
-  <section id="musique">
-    <h2>Musiques de Haute Vibration</h2>
-    <p>Des sons qui guérissent, qui élèvent, qui éveillent les chakras et réenchantent l’âme.</p>
-  </section>
-
-  <section id="oracle">
-    <h2>Oracle Lumina</h2>
-    <p>Tirage sacré, guidance céleste. Interroge les 21 cartes et reçois leur message.</p>
-  </section>
-
-  <section id="inscription">
-    <h2>Rejoins le Sanctuaire</h2>
-    <button onclick="window.location.href='mailto:contact@floraisondor.org'">S'inscrire</button>
-  </section>
-
-  <section id="don">
-    <h2>Soutiens la Mission</h2>
-    <button onclick="window.location.href='https://www.paypal.com/donate'">Faire un Don</button>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Le Mystère de la Floraison d'Or — Tous droits réservés.</p>
-  </footer>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Phoenix-Fabelwesen.jpg" alt="Phénix" />
+  <h1>Le Mystère de la Floraison d’Or</h1>
+  <h2>Sanctuaire initiatique du Phénix solaire</h2>
+  <p>
+    Bienvenue, âme en quête.<br>
+    Tu viens d’ouvrir les portes d’un monde ancien et sacré, là où les symboles murmurent, les plantes soignent, et les rêves révèlent des vérités oubliées.<br><br>
+    Le Mystère de la Floraison d’Or est un cercle de renaissance.<br>
+    Un espace de guérison, d’initiation et de connaissance intérieure, où chaque rituel, chaque tisane sacrée, chaque mantra ouvre une fleur de conscience.<br><br>
+    🜂 Le Phénix guide nos pas.<br>
+    🜁 L’Air souffle la sagesse.<br>
+    🜄 L’Eau purifie nos mémoires.<br>
+    🜃 La Terre nous enracine.<br>
+    🔥 Le Feu nous transforme.<br><br>
+    Ici se rencontrent la gnose vivante, les secrets des pierres et des plantes, la mémoire du rêve et l’élan sacré de la floraison de l’Être.
+  </p>
+  <p><em>“Pousse la porte du sanctuaire, bois la lumière, et laisse-toi guider par le feu doré de ton âme.”</em></p>
+  <button class="button">Entrer dans le Sanctuaire</button>
 </body>
 </html>
